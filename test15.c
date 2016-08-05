@@ -1,14 +1,14 @@
 # Inautix_practice
 This repository contains Inautix_practice problems ( most of them are solved in C)
 
-//Solution for Gemstones problem
+/*Solution for Gemstones problem
 
 question link: https://www.hackerrank.com/challenges/gem-stones?h_r=internal-search
 
 solution:
 
 //logic : whenever i encounter a letter in a string, i will increment its corresponding position in integer array, at the end if 'a' is present
-          in all 3 lines, it will be incremented thrice. so if incremented value == size then it is a gemstone!
+         // in all 3 lines, it will be incremented thrice. so if incremented value == size then it is a gemstone!*/
 int main()
 {
    int size,i,j,flag=0,ans=0,k=0,arr[27]={0};
@@ -23,7 +23,7 @@ int main()
         for(j=0;str[i][j]!='\0';j++)
         {
             for(k=0;k<j;k++)                    // this for loop is used bcs if a letter is repeated within a line of string, we have to neglect it.
-                                                    we need to increment only once for that letter.
+                                                 //   we need to increment only once for that letter.
             {
                 if(str[i][j]==str[i][k])
                 {
@@ -52,7 +52,7 @@ int main()
 }
 
 
-Solution for Modify Prices problem:
+//Solution for Modify Prices problem:
 
 int verifyItems( int origItems_size, char **origItems, int origPrizes_size, float *origPrizes, int items_size, char *items, int prices_size, float *prices)
 {
